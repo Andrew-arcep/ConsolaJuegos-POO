@@ -1,0 +1,14 @@
+# Compilado y archivos de IntelliJ
+out/
+.idea/
+*.iml
+
+# Datos que se generan al jugar
+records.txt
+datos/
+
+# Archivos comprimidos y temporales
+*.zip
+*.rar
+*.new
+docs/api/
