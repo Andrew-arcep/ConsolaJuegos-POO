@@ -40,7 +40,7 @@ public class OperacionSuperTierra implements Jugable {
     private int puntaje, combo, mejorCombo, perfectos, enBeat, pisosTotales, bpmFinal;
     private String mensaje = "";
 
-        public static final String NOMBRE = "Torre de Super Tierra";
+    public static final String NOMBRE = "Torre de Super Tierra";
     public static final String DESCRIPCION = "Apila contenedores de suministros al ritmo del metronomo (Helldivers 2).";
 
     private final Scanner entrada;

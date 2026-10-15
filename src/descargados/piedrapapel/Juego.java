@@ -1,4 +1,4 @@
-package games;
+package descargados.piedrapapel;
 
 import java.nio.file.Path;
 import java.util.Scanner;

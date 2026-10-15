@@ -33,7 +33,7 @@ public class MinasDeMoria implements Jugable {
                 + b.getColor() + b.getSimbolo() + RESET + " = " + b.getNombre() + "    O = Puerta Este";
     }
 
-        public static final String NOMBRE = "Minas de Moria";
+    public static final String NOMBRE = "Minas de Moria";
     public static final String DESCRIPCION = "Carrera de 2 jugadores por turnos hacia la Puerta Este (El Senor de los Anillos).";
 
     private final Scanner entrada;

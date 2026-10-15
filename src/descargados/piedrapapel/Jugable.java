@@ -1,4 +1,4 @@
-package games;
+package descargados.piedrapapel;
 
 import java.util.Scanner;
 

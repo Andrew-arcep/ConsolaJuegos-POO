@@ -42,7 +42,7 @@ Cada juego abre un mini menú: **Jugar / Leer instrucciones / Salir al menú**.
 |---|---|---|
 | **Torre de Super Tierra** (`OperacionSuperTierra`) | Helldivers 2 | Juego rítmico de apilar bloques. Un contenedor recorre la fila de arriba al compás de un metrónomo (TUM / tak) y al pulsar ENTER cae sobre la torre. Hay 3 torres; la primera es un tutorial y cada una es más difícil (más pisos, base más angosta, más BPM, movimiento errático). |
 | **Minas de Moria** (`MinasDeMoria`) | El Señor de los Anillos | Carrera de **2 jugadores** por turnos en un laberinto generado al azar. Cada jugador mueve hasta 3 habitaciones por turno con W/A/S/D. Gana quien llegue primero a la Puerta Este. |
-| **Piedra, Papel o Tijera** (`DueloDelCapitulo`) | Warhammer 40k | Juego **descargado** de otra persona (paquete `games`), integrado con un adaptador. |
+| **Piedra, Papel o Tijera** (`DueloDelCapitulo`) | Warhammer 40k | Juego **descargado** de otra persona (paquete `descargados.piedrapapel`), integrado con un adaptador. |
 
 ## Arquitectura
 
@@ -56,7 +56,7 @@ consola/
 │   └── duelo/      DueloDelCapitulo (adaptador del juego descargado)
 ├── stats/   LibroDeHonor, RegistroDeBatalla, InformeDeCampana, RangoImperial
 └── util/    Cogitador, Heraldo, Vestibulo
-games/       paquete del juego descargado (Piedra, Papel o Tijera), sin dependencias de `consola`
+descargados/piedrapapel/   paquete del juego descargado (Piedra, Papel o Tijera), sin dependencias de `consola`
 ```
 
 ### Interfaces
@@ -93,7 +93,7 @@ No hay que tocar el menú, el ranking ni las estadísticas.
 
 ## Juegos descargados
 
-El juego de otra persona se copia tal cual a su propio paquete y un adaptador (por ejemplo
+El juego de otra persona se copia a su propio paquete (`descargados.<nombre>`, para que no choque con otros) y un adaptador (por ejemplo
 `DueloDelCapitulo`) lo envuelve para cumplir `Jugable`. Su código **no depende** de la consola.
 Cambios hechos al original: se le agregó un getter con el nombre del jugador y se le quitó el ranking propio
 en archivo, porque todas las estadísticas se registran en la consola.

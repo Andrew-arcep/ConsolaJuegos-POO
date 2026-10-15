@@ -2,6 +2,13 @@
 
 Formato basado en *Keep a Changelog*. Fechas en AAAA-MM-DD.
 
+## [1.0.1] - 2026-10-15
+
+### Cambiado
+- El juego descargado se movio del paquete generico `games` a `descargados.piedrapapel`, para que no choque
+  con el paquete de otro juego descargado al compartir el proyecto.
+- Se corrigio la indentacion de las constantes `NOMBRE` en los juegos.
+
 ## [1.0.0] - 2026-10-08
 
 ### Agregado

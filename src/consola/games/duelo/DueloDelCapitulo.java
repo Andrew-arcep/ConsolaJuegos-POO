@@ -3,7 +3,7 @@ package consola.games.duelo;
 import consola.games.Jugable;
 import consola.games.Hazana;
 import consola.util.Vestibulo;
-import games.PiedraPapelTijera;
+import descargados.piedrapapel.PiedraPapelTijera;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -18,7 +18,7 @@ public class DueloDelCapitulo implements Jugable {
     private static final int PUNTOS_VICTORIA = 100;
     private static final int PUNTOS_EMPATE = 50;
 
-        public static final String NOMBRE = "Piedra, Papel o Tijera";
+    public static final String NOMBRE = "Piedra, Papel o Tijera";
     public static final String DESCRIPCION = "Duelo de un solo golpe contra el servo-craneo del Capitulo (Warhammer 40k).";
 
     private final Scanner entrada;
